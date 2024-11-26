@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+	font-family: 'Work Sans';
+  margin: 0;
+	padding: 0;
+  position: relative;
+	background-color: hsl(275, 100%, 97%);
+}
+
+.background-image {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; 
+}
+
+main {
+  position: relative; 
+  z-index: 1; 
+  background-color: hsl(0, 0%, 100%); 
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	border: 0px solid black;
+	border-radius: 8px	;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: justify; 
+	margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: justify; 
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify; 
+	color: hsl(292, 16%, 49%);
+}
+
+.star {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.button-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.hidden {
+	display: none;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
+}
+
+h2:hover {
+	cursor: pointer;
+	color: hsl(292, 16%, 49%);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 70%;
+    margin-top: 10px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .star {
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+	.button-title {
+		gap: 10px;
+	}
+	
+	h2:hover {
+    cursor: default; 
+    color: inherit; 
+  }
+}
